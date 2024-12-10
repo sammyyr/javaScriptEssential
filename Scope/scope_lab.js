@@ -23,8 +23,20 @@ function show(){
     var functionVar = "I'm a block-scoped var";
     let functionLet = "I'm a block-scoped let";
     const functionConst = "I'm a block-scoped const";
+    var x = 10;
+    let y = 11;
+    const pi = 3.14;
+    x = 20;
+    y = 22;
+    //pi = 3.15;
+    console.log("x is: " + x);
+    console.log("y is: " + y);
+    console.log("pi is: " + pi);
 }
 show();
-console.log(functionVar); // Throws ReferenceError
-console.log(functionLet); // Throws ReferenceError
-console.log(functionConst); // Throws ReferenceError
+//console.log(functionVar); // Throws ReferenceError
+//console.log(functionLet); // Throws ReferenceError
+//console.log(functionConst); // Throws ReferenceError
+console.log("x is: " + x);
+console.log("y is: " + y);
+console.log("pi is: " + pi);
